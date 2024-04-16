@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotacja</title>
+</head>
+<body>
+    <div id="kontener">
+        <h1>Formularz dotacji</h1>
+        <form action="#" method="get">
+            <div id="Beneficjenci">
+                <fieldset>
+                    Beneficjent:
+                    <input type="text" name="Beneficjent" list="Beneficjen" title="Wpisz nazwe organizacji któremu jest przekazywana dotacja" required/> 
+                    <datalist id="Beneficjen">
+                        <option value="Wioski dziecięce SOS"></option>
+                        <option value="Caritas"></option>
+                        <option value="Czerwony Krzyż"></option>
+                        <option value="Harcerstwo"></option>
+                        <option value="WOŚP"></option>
+                    </datalist>
+                    <br>
+                    Wartość dotacji:
+                    <input type="number" name="Wartość" min="20" step="1" title="Wartość nie może być mniejsza niż 20" required>
+                </fieldset>
+            </div> <br><br>
+            <div id="Dane">
+                <fieldset>
+                    <legend>Dane karty płatniczej</legend>
+                    Karta:
+                    <input type="radio" name="Card" id="Visa" required > <label for="Visa">Visa</label>
+                    <input type="radio" name="Card" id="MCard" required> <label for="MCard">Master Card</label> <br>
+                    Numer:
+                    <input type="text" name="Numer" title="Wpisz numer karty 13-16 cyfr"  required pattern="[0-9]{13,16}" maxlength="16"><br>
+                    Data ważności:
+                    <input type="text" name="Data" pattern="[a-zA-Z]{3,12}\s[0-9]{4}" required title="Wpisz miesiąc i rok" placeholder="np. maj 2023"><br>
+                    Kod CVV:
+                    <input type="text" name="Kod" title="Wpisz 3 lub 4 cyfrowy kod" placeholder="XXX" required pattern="[0-9]{3,4}">
+
+                </fieldset>
+            </div>  
+            <p>Darczyńca <input type="text" name="Darczyńca" title="Wpisz darczyńcę" pattern="^[A-Za-z]{3,}$"></p>
+            <input type="submit" value="Rejestruj">
+            <input type="reset" value="Wyczyść">
+        </form>
+    </div>
+</body>
+</html>
