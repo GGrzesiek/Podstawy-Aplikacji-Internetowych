@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Kreator pizzy </title>
-</head>
-<body>
-	<div id="kontener">
-		<div id="baner"><h1>Kreator Pizzy</h1></div>
-		<div id="formularz">
-			<form action="mailto:beatap@cs.pollub.pl" method="post">
-			<fieldset>
-				<legend> Rozmiar: </legend>
-					<input type="radio" name="size" value="s" /> Mała 
-					<input type="radio" name="size" value="m" /> Średnia 
-					<input type="radio" name="size" value="l" /> Duża <br />
-			</fieldset>
-			<fieldset>
-				<legend> Dodatki: </legend>
-					<input type="checkbox" name="Szynka" value="Szynka" /> Szynka <br />
-					<input type="checkbox" name="Salami" value="Salami" /> Salami <br />
-					<input type="checkbox" name="Boczek" value="Boczek" /> Boczek <br />
-					<input type="checkbox" name="Papryka" value="Papryka" /> Papryka <br />
-					<input type="checkbox" name="Pomidor" value="Pomidor" /> Pomidor <br />
-					<input type="checkbox" name="Ser" value="Ser" /> Ser <br />
-			</fieldset>
-			<fieldset>
-				<legend> Sosy: </legend>
-				Wybierz sos:
-					<select size="3" name="sosy" multiple="multiple">
-						<option value="p">Pomidorowy</option>
-						<option value="cz">Czosnkowy</option>
-						<option value="kl">Ketchup łagodny</option>
-						<option value="kp">Ketchup pikantny</option>
-					</select> <br />
-				Inne uwagi: 
-					<textarea cols="10" rows="3" name="opinia">
-					</textarea><br />
-			</fieldset>
-			<br />
-			<input type="reset" value="Wyczyść dane" />
-			<input type="submit" value="Wyśłij zamówienie" /> <br />
-			</form>
-		</div>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kreator pizzy</title>
+  </head>
+  <body>
+    <div id="kontener">
+      <div id="baner"><h1>Kreator Pizzy</h1></div>
+      <div id="formularz">
+        <form action="mailto:beatap@cs.pollub.pl" method="post">
+          <fieldset>
+            <legend>Rozmiar:</legend>
+            <input type="radio" name="size" value="s" /> Mała
+            <input type="radio" name="size" value="m" /> Średnia
+            <input type="radio" name="size" value="l" /> Duża <br />
+          </fieldset>
+          <fieldset>
+            <legend>Dodatki:</legend>
+            <input type="checkbox" name="Szynka" value="Szynka" /> Szynka <br />
+            <input type="checkbox" name="Salami" value="Salami" /> Salami <br />
+            <input type="checkbox" name="Boczek" value="Boczek" /> Boczek <br />
+            <input type="checkbox" name="Papryka" value="Papryka" /> Papryka
+            <br />
+            <input type="checkbox" name="Pomidor" value="Pomidor" /> Pomidor
+            <br />
+            <input type="checkbox" name="Ser" value="Ser" /> Ser <br />
+          </fieldset>
+          <fieldset>
+            <legend>Sosy:</legend>
+            Wybierz sos:
+            <select size="3" name="sosy" multiple="multiple">
+              <option value="p">Pomidorowy</option>
+              <option value="cz">Czosnkowy</option>
+              <option value="kl">Ketchup łagodny</option>
+              <option value="kp">Ketchup pikantny</option>
+            </select>
+            <br />
+            Inne uwagi:
+            <textarea cols="10" rows="3" name="opinia"> </textarea><br />
+          </fieldset>
+          <br />
+          <input type="reset" value="Wyczyść dane" />
+          <input type="submit" value="Wyśłij zamówienie" /> <br />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
-

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/kalkulator.js"></script>
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Kalkulator</legend>
+      <table>
+        <tr>
+          <td>
+            <h3>Wpisz liczby:</h3>
+            X: <br />
+            <input type="text" id="pierwsza" /><br />
+            Y: <br />
+            <input type="text" id="druga" />
+          </td>
+          <td>
+            <h3>Wskaż działanie:</h3>
+            <input type="radio" name="operacja" value="dodawanie" />
+            <label for="operacja">+</label>
+            <br />
+            <input type="radio" name="operacja" value="odejmowanie" />
+            <label for="operacja">-</label>
+            <br />
+            <input type="radio" name="operacja" value="mnożenie" />
+            <label for="operacja">*</label>
+            <br />
+            <input type="radio" name="operacja" value="dzielenie" />
+            <label for="operacja">/</label>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="oblicz()">Oblicz</button></td>
+          <td>
+            Wynik:
+            <input type="text" id="wynik" disabled />
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </body>
+</html>
