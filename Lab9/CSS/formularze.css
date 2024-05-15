@@ -1,0 +1,38 @@
+button {
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    width: 75px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 5px;
+}
+
+.czerwone {
+    color: red;
+    visibility: hidden;
+}
+
+.przycisk {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #226DD9;
+    color: #f0f0f0;
+}
+
+@media screen and (max-width: 480px) {
+    input {
+        font-size: 70%;
+    }
+
+    select {
+        font-size: 70%;
+    }
+
+    button {
+        font-size: 80%;
+    }
+
+}

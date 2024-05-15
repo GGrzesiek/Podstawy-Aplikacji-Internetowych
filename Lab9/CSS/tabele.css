@@ -1,0 +1,73 @@
+table{
+    background-color: #F5F5F6;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 1px black;
+    
+}
+#rowf
+{
+    border-radius: 10px 1px 1px 1px;
+}
+#rows
+{   
+     border-radius: 1px 10px 1px 1px;
+}
+tfoot td
+{
+    border-radius: 1px 1px 10px 10px;
+}
+caption{
+    font-size:120%;
+    font-weight: bold;
+    
+}
+tfoot, thead{
+    color: white;
+    background-color: #226DD9;
+    font-size: 110%;
+    padding: 5pt;
+    
+}
+td,th{
+    border: 1pt solid #dadadf; 
+}
+tfoot a{
+    color: white;
+}
+
+tbody tr:nth-child(2n+0){
+    background-color: white;
+}
+@media screen and (max-width: 768px)
+{
+
+    caption{
+        font-size: 100%;
+    }
+    tfoot, thead,tbody
+    {
+    font-size: 75%;
+    }
+}
+@media screen and (max-width: 420px) and (min-width: 320px)
+{
+    caption{
+        font-size: 85%;
+    }
+    tfoot, thead,tbody
+    {
+        font-size: 50%;
+    }
+}
+@media screen and (max-width: 320px)
+{
+    caption{
+        font-size: 65%;
+    }
+    tfoot, thead,tbody
+    {
+    font-size: 40%;
+    }
+}

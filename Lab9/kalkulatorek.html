@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/kalkulatorek.js"></script>
+    <title>Kalkulatorek </title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Kalkulatorek</legend>
+      <table>
+        <tr>
+          <td>
+            <h3>Wpisz liczby: </h3>
+             X: <br>
+            <input type="text" id="first" required><br>
+             Y: <br>
+            <input type="text" id="second" required>
+          </td>
+          <td>
+            <h3>Wskaż działanie: </h3>
+            <input type="radio" name="operator" value="add"> <label for="operator">+</label>
+            <br>
+            <input type="radio" name="operator" value="sub"> <label for="operator">-</label>
+            <br>
+            <input type="radio" name="operator" value="div"> <label for="operator">*</label>
+            <br>
+            <input type="radio" name="operator" value="mull"> <label for="operator">/</label>
+          </td>
+        </tr>
+        <tr>
+          <td> <button onclick="oblicz()" >Oblicz</button> </td>
+          <td> Wynik:
+            <input type="text" id="resault" disabled>
+          </td>
+        </tr>
+      </table>
+
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Szybki kurs HTML </title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/Galeria.css" type="text/css">
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css">
+    <link rel="stylesheet" href="CSS/slide.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/slide.js"></script>
+    <script src="js/lightbox.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2>Szybki kurs HTML</h2>
+        </header>
+        <div id="slideshow">
+            <img src="https://luxfon.com/images/201506/luxfon.com_37175.jpg" alt="image1" class="active" />
+            <img src="https://i.pinimg.com/originals/12/0a/3b/120a3b8c172e3e7ad374d2d9f9a451a0.jpg" alt="image2" />
+            <img src="https://d36zfg4d500s0g.cloudfront.net/cache/images/DT/up/dt/2019/02/What-else-Cologne-has-to-offer-2000x1125-.jpg"
+                alt="image3" />
+        </div>
+        <nav>
+            <ul id="nav">
+                <li id="first"><a href="index.html">Podstawy</a></li>
+                <li><a href="tabele.html">Tabele</a></li>
+                <li><a href="">Formularze</a>
+                    <ul>
+                        <li id="firstli"><a href="formularze.html">Pola formularza</a></li>
+                        <li id="secondli"><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                    </ul>
+                </li>
+                <li id="last"><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h3 id="cont">Galeria zdjęć</h3>
+            <div id="image">
+                <a href="https://www.1zoom.me/big2/233/319688-svetik.jpg" target="_blank" data-lightbox="galeria"
+                    data-title="Obraz 1">
+                    <img src="https://www.1zoom.me/big2/233/319688-svetik.jpg" alt="non image" class="images"> </a>
+                <a href="https://w.wallhaven.cc/full/kw/wallhaven-kwpg1m.jpg" target="_blank" data-lightbox="galeria"
+                    data-title="Obraz 2">
+                    <img src="https://w.wallhaven.cc/full/kw/wallhaven-kwpg1m.jpg" alt="non image" class="images"> </a>
+                <a href="https://cdn.wallpapersafari.com/59/96/qAsw9T.jpg" target="_blank" data-lightbox="galeria"
+                    data-title="Obraz 3">
+                    <img src="https://cdn.wallpapersafari.com/59/96/qAsw9T.jpg" alt="non image" class="images"> </a>
+                <a href="https://images6.alphacoders.com/111/1112459.jpg" target="_blank" data-lightbox="galeria"
+                    data-title="Obraz 4">
+                    <img src="https://images6.alphacoders.com/111/1112459.jpg" alt="non image" class="images"> </a>
+                <a href="https://cdn.vox-cdn.com/thumbor/ZnP9cnjIn60slvybF_34lby1uMk=/0x0:2000x1125/1200x675/filters:focal(840x403:1160x723)/cdn.vox-cdn.com/uploads/chorus_image/image/58203557/171109_06_49_10_5DSR4201.0.jpg"
+                    target="_blank" data-lightbox="galeria" data-title="Obraz 5">
+                    <img src="https://cdn.vox-cdn.com/thumbor/ZnP9cnjIn60slvybF_34lby1uMk=/0x0:2000x1125/1200x675/filters:focal(840x403:1160x723)/cdn.vox-cdn.com/uploads/chorus_image/image/58203557/171109_06_49_10_5DSR4201.0.jpg"
+                        alt="non image" class="images"> </a>
+                <a href="https://luxfon.com/images/201506/luxfon.com_37175.jpg" target="_blank" data-lightbox="galeria"
+                    data-title="Obraz 6">
+                    <img src="https://luxfon.com/images/201506/luxfon.com_37175.jpg" alt="non image" class="images">
+                </a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_b8942UHit6rvskKsRwsM2XUWz4Z6Prm4Dg&usqp=CAU"
+                    target="_blank" data-lightbox="galeria" data-title="Obraz 7">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_b8942UHit6rvskKsRwsM2XUWz4Z6Prm4Dg&usqp=CAU"
+                        alt="non image" class="images">
+                </a>
+                <a href="https://i.pinimg.com/originals/12/0a/3b/120a3b8c172e3e7ad374d2d9f9a451a0.jpg" target="_blank"
+                    data-lightbox="galeria" data-title="Obraz 9">
+                    <img src="https://i.pinimg.com/originals/12/0a/3b/120a3b8c172e3e7ad374d2d9f9a451a0.jpg"
+                        alt="non image" class="images"> </a>
+                <a href="https://d36zfg4d500s0g.cloudfront.net/cache/images/DT/up/dt/2019/02/What-else-Cologne-has-to-offer-2000x1125-.jpg"
+                    target="_blank" data-lightbox="galeria" data-title="Obraz 9">
+                    <img src="https://d36zfg4d500s0g.cloudfront.net/cache/images/DT/up/dt/2019/02/What-else-Cologne-has-to-offer-2000x1125-.jpg"
+                        alt="non image" class="images"> </a>
+            </div>
+        </article>
+        <aside>
+            <div class="box">
+                <h3>Walidatory:</h3>
+                <ul>
+                    <li> <a href="http://validator.w3.org/" target="_blank">HTML </a></li>
+                    <li> <a href="http://jigsaw.w3.org/css-validator/" target="_blank">CSS</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Kursy:</h3>
+                <ul>
+                    <li> <a href="https://www.w3schools.com/html/" target="_blank"> HTML </a></li>
+                    <li> <a href="https://www.w3schools.com/css/" target="_blank"> CSS </a></li>
+                    <li> <a href="https://www.w3schools.com/js/" target="_blank"> JS </a></li>
+                    <li> <a href="https://www.w3schools.com/php/" target="_blank"> PHP </a></li>
+                </ul>
+            </div>
+        </aside>
+        <footer> &copy;BP </footer>
+    </main>
+</body>
+
+</html>

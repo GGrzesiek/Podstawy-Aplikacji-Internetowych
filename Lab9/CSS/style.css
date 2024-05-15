@@ -1,0 +1,243 @@
+main/*ustalenie rozmiaru ta koloru strony*/
+{
+    background: #f0f0f0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+body{/*ustalenie coloru ta rozdiny czcionki*/
+    background: #f0f0f0;
+    color:#000040;
+    font-family:  'Roboto', sans-serif;
+   }
+header, footer {/*wycentrowanie nagłówku ta stopky, zmiana koloru, dodania cieni ta zaokrąglenie narożników*/
+    background: #e3e3e3;
+    color: black;
+    text-align:center;
+    box-shadow: 5px 5px 5px rgb(209, 209, 209);
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#nav /*nadanie koloru ta zmiana odstępów*/{
+    background: #226DD9;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-family:  'Roboto', sans-serif;
+} 
+ul#nav li {/*Nadanie elementam listy właściwości block, nadanie koloru tła ta nadanie zawijania po prawej stronie*/
+    color: #efecbe;
+    background: #226DD9;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative; 
+    text-decoration: none;
+   } 
+   /*zaokrąglenie narożników*/
+#first{
+    border-radius: 5px 1px 1px 5px;
+}
+#last
+{
+    border-radius: 1px 5px 5px 1px;
+}
+ul#nav li:hover {/*wycofanie cropek w liście,zmiana koloru tła ta nadanie zawijania po prawej stronie */
+ list-style-type: none;
+ float: left;
+ background: #1147A7;
+}    
+ul#nav li a {/*nadanie hiperłączam właściwości block ta wycofanie elementów decoracyjnych*/
+ color: white;
+ display : block;
+ padding : 4pt;
+ text-decoration : none;
+} 
+ul#nav li li a {/*Nadanie szyrokości hiperłączam w rozwijanym meni*/
+ width: 180px;
+
+}
+/*zaokrąglenie narożników*/
+#firstli
+{
+    border-radius: 1px 10px 1px 1px;
+}
+#secondli
+{
+    border-radius: 1px 1px 10px 10px;
+}
+
+ul#nav li ul {/*Nadanie minimalnego rozmiaru elementam meni,zwiększanie marginesów ta dziedziczy pozycjonowanie przodka*/
+    background: #226DD9;
+    min-width: 5rem;    
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    border-radius: 1px 1px 10px 10px;
+}
+ul#nav li ul li{/*zabrania zawijania z dolnej krawędzi zawijanej listy ta ustala szyrokość elementów jako 100%*/
+    clear: both;
+    width: 100%;
+}
+
+ul#nav li:hover ul {/*nadaje elementowi neprzezroczystość, ustala odstępy po rodzicu ta nadaje elementowi właściwości block*/
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    padding: unset;
+
+}
+
+article/*Nadaje kolor tła,zmniejsza szyrokość w 75%,zwiększa szyrokość ta nadaje możliwość zawijania po prawej stronie*/
+{
+    background-color: #f0f0f0;
+    float:left;
+    width:75%;
+    padding:1%;
+}
+aside/*nadanie możliwości zawijania po lewej stronie ta zmniejsza szerokość na 20% ta zwiększa odstępy*/
+{
+    float: right;
+    width: 20%;
+    padding: 1%;
+}
+footer{/*zabrania zawijania z dolu,wyśrodkuje treść,zwiększa szerokość ta odstępy z dolu ta góry*/
+    clear:both;
+    width:100%;
+    padding:5px 0 5px 0;
+    text-align:center;
+}
+.box/*Nadanie koloru tła ta treści,zwiększanie marginesów ta odstępów,zmniejszanie rozmiaru tresci ta zaokrąglenie narożników*/
+{
+    background-color:#226DD9;
+    color:#f0f0f0;
+    padding:5px;
+    margin:5px;
+    font-size:90%;
+    border-radius: 7px;
+    margin-bottom: 3px;
+
+}
+.box a{color:#f0f0f0}/*Nadanie koloru hiperłączam*/
+   
+h2, h3 {/*Wyzerowanie odstępów ta marginesów w nagłówkachs*/
+    margin:0;
+    padding:0;
+}
+
+@media screen and (max-width: 768px)/*Zmniejsza wszystkie elementy ta zmienia bloczny blok nawigacji z column na wierszy*/
+{
+    ul#nav li li a {
+        width: 140px;
+    }
+    aside{
+        
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+        font-size: 0.7em;
+    }
+    .box 
+    {
+        width: 44%;
+        margin-left:3.5%;
+
+    }
+    article
+    {
+        float: none;
+        width: 100%;
+        font-size: 80%;
+       
+    }
+    header, footer { 
+        font-size: 12px; 
+        
+    }
+    nav li {
+            text-align: center;
+            font-size: 70%;
+            padding-right:1px;
+        }
+        ul#nav li {
+            position: unset;
+            display:inherit;
+            flex-direction: column;
+            width: 90%;
+            
+        }
+        ul#nav li:hover
+        {
+            display:inherit;
+        }
+        ul#nav li:hover ul
+        {
+            display: inherit;
+            margin-top: 1rem;
+            width: 69%;    
+            margin-left: 6.1%;
+        }
+        ul#nav li li a 
+        {
+            width: 100%;
+            font-size: 10px;
+    
+        }
+    
+    #first{
+        border-radius: 5px 5px 1px 1px;
+    }
+    #last
+    {
+        border-radius: 1px 1px 5px 5px;
+    }
+}
+@media screen and (max-width: 480px) {/*Zmniejsza wszystkie elementy ta zmienia bloczny blok nawigacji z wierszów na kolumny*/
+    article
+    {
+        font-size: 55%;
+    }
+    footer,header {
+        padding: 2;
+    }
+    ul#nav li {
+        padding: 0.4rem;
+        width: 97%;
+    }
+    ul#nav a {
+        font-size: 0.9em;
+    }
+    ul#nav li ul {
+        min-width: 1rem;    
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+    ul#nav li:hover ul {
+        margin-left: 7%;
+    }
+    ul#nav li li a 
+    {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #logotyp {
+        height: 30px;
+    }
+      .box {
+    font-size: 60%;
+    line-height: 11.5px;
+    padding-bottom: 0;
+    margin-left:2%;
+    width: 96%;
+
+  }
+  aside {
+    flex-direction: column;
+  }
+  aside h3 {
+      text-align: center;
+  }
+}

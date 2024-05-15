@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/walidacja.js"></script>
+  <style>
+    .czerwone {
+      color: red;
+      visibility: hidden;
+    }
+  </style>
+  <title>Walidacja</title>
+</head>
+
+<body>
+  <form method="post" action="mailto:xxx@xxx.xx" onsubmit="return sprawdz()">
+    <table>
+      <tr>
+        <td>Nazwisko: </td>
+        <td><input name="nazw" size="30" id="nazw" /></td>
+        <td id="nazw_error" class="czerwone">
+          Wpisz poprawnie nazwisko!
+        </td>
+      </tr>
+      <tr>
+        <td>Wiek:</td>
+        <td>
+          <input name="wiek" size="30" id="wiek" />
+        </td>
+        <td id="wiek_error" class="czerwone">
+          Wpisz poprawny wiek!
+        </td>
+      </tr>
+      <tr>
+        <td>Państwo:</td>
+        <td>
+          <select name="kraj" id="kraj">
+            <option value="pl" selected="selected">Polska</option>
+            <option value="gb">Wielka Brytania</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Adres e-mail: </td>
+        <td><input name="email" size="30" id="email" /></td>
+        <td id="email_error" class="czerwone">
+          Wpisz poprawny email!
+        </td>
+      </tr>
+    </table>
+    <h4>Zamawiam tutorial z języka:</h4>
+    <p>
+      <input name="jezyk" type="checkbox" value="PHP" id="php" />PHP
+      <input name="jezyk" type="checkbox" value="C/C++" id="c" />C/C++
+      <input name="jezyk" type="checkbox" value="Java" id="java" />Java
+      <span id="produkt_error" class="czerwone">Wskaż zamówiony produkt</span>
+    </p>
+    <h4>Sposób zapłaty:</h4>
+    <p>
+      <input name="zaplata" id="zaplata" type="radio" value="euro" />eurocard
+      <input name="zaplata" type="radio" checked="checked" value="visa" />visa
+      <input name="zaplata" type="radio" value="przelew" />przelew bankowy
+      <span id="zaplata_error" class="czerwone">Musisz wskazać sposób płatności</span>
+      <p>
+        <input type="submit" value=" Wyślij " />
+        <input type="reset" value=" Anuluj " />
+      </p>
+    </p>
+  </form>
+</body>
+
+</html>
