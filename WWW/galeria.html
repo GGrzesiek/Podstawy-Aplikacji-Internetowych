@@ -11,10 +11,20 @@
     />
     <link rel="stylesheet" href="CSS/style.css" type="text/css" />
     <link rel="stylesheet" href="CSS/galeria.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/slide.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="JS/lightbox.js"></script>
+    <script type="text/javascript" src="JS/slide.js"></script>
   </head>
   <body>
     <main>
       <header><h2>Szybki kurs HTML</h2></header>
+      <div id="slideshow">
+        <img src="miniaturki/obraz8.jpg" alt="obraz8" class="active" />
+        <img src="miniaturki/obraz6.jpg" alt="obraz6" />
+        <img src="miniaturki/obraz4.jpg" alt="obraz4" />
+      </div>
       <nav>
         <ul id="nav">
           <li><a href="index.html">Podstawy</a></li>
@@ -32,32 +42,32 @@
       <article>
         <h3 id="naglowek">Galeria zdjęć</h3>
         <div id="image">
-          <a href="" target="_blank">
-            <img src="zdjecia/obraz1.jpg" alt="non image" />
+          <a href="zdjecia/obraz1.JPG" target="_blank" data-lightbox="galeria" data-title="Obraz 1">
+            <img src="miniaturki/obraz1.JPG" alt="obraz1" />
           </a>
-          <a href="" target="_blank">
-            <img src="zdjecia/obraz2.jpg" alt="non image" />
+          <a href="zdjecia/obraz2.JPG" target="_blank" data-lightbox="galeria" data-title="Obraz 2">
+            <img src="miniaturki/obraz2.jpg" alt="obraz2" />
           </a>
-          <a href="" target="_blank">
-            <img src="zdjecia/obraz3.jpg" alt="non image" />
+          <a href="zdjecia/obraz3.JPG" target="_blank" data-lightbox="galeria" data-title="Obraz 3">
+            <img src="miniaturki/obraz3.jpg" alt="obraz3" />
           </a>
-          <a href="" target="_blank">
-            <img src="zdjecia/obraz4.jpg" alt="non image" />
+          <a href="zdjecia/obraz4.JPG" target="_blank" data-lightbox="galeria" data-title="Obraz 4">
+            <img src="miniaturki/obraz4.jpg" alt="obraz4" />
           </a>
-          <a href="" target="_blank">
-            <img src="zdjecia/obraz5.jpg" alt="non image" />
+          <a href="zdjecia/obraz5.JPG" target="_blank" data-lightbox="galeria" data-title="Obraz 5">
+            <img src="miniaturki/obraz5.jpg" alt="obraz5" />
           </a>
-          <a href="" target="_blank">
-            <img src="zdjecia/obraz6.jpg" alt="non image" />
+          <a href="zdjecia/obraz6.JPG" target="_blank" data-lightbox="galeria" data-title="Obraz 6">
+            <img src="miniaturki/obraz6.jpg" alt="obraz6" />
           </a>
-          <a href="" target="_blank">
-            <img src="zdjecia/obraz7.jpg" alt="non image" />
+          <a href="zdjecia/obraz7.JPG" target="_blank" data-lightbox="galeria" data-title="Obraz 7">
+            <img src="miniaturki/obraz7.jpg" alt="obraz7" />
           </a>
-          <a href="" target="_blank">
-            <img src="zdjecia/obraz8.jpg" alt="non image" />
+          <a href="zdjecia/obraz8.JPG" target="_blank" data-lightbox="galeria" data-title="Obraz 8">
+            <img src="miniaturki/obraz8.jpg" alt="obraz8" />
           </a>
-          <a href="" target="_blank">
-            <img src="zdjecia/obraz9.jpg" alt="non image" />
+          <a href="zdjecia/obraz9.JPG" target="_blank" data-lightbox="galeria" data-title="Obraz 9">
+            <img src="miniaturki/obraz9.jpg" alt="obraz9" />
           </a>
         </div>
       </article>

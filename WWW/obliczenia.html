@@ -7,6 +7,7 @@
     <title>Dostęp do pól formularza</title>
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/obliczenia.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="Js/funkcje.js"></script>
   </head>
   <body>
@@ -41,14 +42,14 @@
           </tr>
           <tr>
             <th>Rata miesięczna: </th>
-            <th><input type="text" id="opmiesieczne" disabled value=""></th>
+            <th><input type="text" class="zielony" id="opmiesieczne" disabled value=""></th>
           </tr>
           <tr>
             <th>Kwota z odsetkami: </th>
-            <th><input type="text" id="odsetki" disabled value=""></th>
+            <th><input type="text" class="zielony" id="odsetki" disabled value=""></th>
           </tr>
         </table>
-        <button class="przycisk_do_wyslania" onclick="oblicz()">Oblicz ratę stałą</button>
+        <button class="przycisk_do_wyslania">Oblicz ratę stałą</button>
       </article>
       <aside>
         <div class="box">

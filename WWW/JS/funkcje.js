@@ -1,16 +1,23 @@
-function oblicz() {
-  var k = parseFloat(document.getElementById('kwota').value);
-  var n = parseInt(document.getElementById('lrat').value);
-  var pr = parseFloat(document.getElementById('oproczne').value);
-  var pr_mc = pr / 12.0;
-  var rata = ((k*pr_mc))/(1-(1/(Math.pow((1 + pr_mc),n))));
+jQuery(document).ready(function () {
+
+$('.przycisk_do_wyslania').click(function () {
+  var k = $('#kwota').val();
+  var n = $('#lrat').val();
+  var pr = $('#oproczne').val();
+  var r_m = pr / 12;
+  var temp = 1 + r_m;
+  var rata = (k * r_m) / (1 - (1 / (Math.pow((temp), n))));
   if(isNaN(rata)) 
   {
     alert('Niepoprawna wartość!!!');
   }
   else 
   {
-    document.getElementById('opmiesieczne').value = pr_mc.toFixed(3);
-    document.getElementById('odsetki').value = rata.toFixed(3);
+    $('#odsetki').val(rata.toFixed(2));
+    $('#opmiesieczne').val(r_m.toFixed(2));
   }
-}
+  $('article').css('background', '#E3E3E3');
+  $('th').css("font-weight", "bold");
+  $('.zielony').css('background', '#90EE90');
+  });
+});
