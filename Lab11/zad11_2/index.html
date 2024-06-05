@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularz kolorów RGB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="colorForm">
+        <label for="hexCode">Kod szesnastkowy RGB (np. #FF0000):</label>
+        <input type="text" id="hexCode" name="hexCode"><br><br>
+
+        <label for="colorName">Nazwa koloru:</label>
+        <input type="text" id="colorName" name="colorName"><br><br>
+
+        <button type="button" id="savePair">Zapisz parę</button>
+        <button type="button" id="showPairs">Pokaż wszystkie pary</button>
+        <button type="button" id="clearData">Usuń dane</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

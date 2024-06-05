@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Koszyk zakupowy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Koszyk zakupowy</h1>
+
+    <form id="productForm">
+        <label for="productName">Nazwa produktu:</label>
+        <input type="text" id="productName" name="productName" required><br><br>
+
+        <label for="productPrice">Cena:</label>
+        <input type="number" id="productPrice" name="productPrice" required><br><br>
+
+        <label for="productColor">Kolor:</label>
+        <input type="text" id="productColor" name="productColor" required><br><br>
+
+        <label for="productQuantity">Liczba sztuk:</label>
+        <input type="number" id="productQuantity" name="productQuantity" required><br><br>
+
+        <button type="button" id="saveProduct">Zapisz produkt do koszyka</button>
+        <button type="button" id="displayCart">Wyświetl koszyk</button>
+        <button type="button" id="clearCart">Usuń wszystkie produkty</button>
+    </form>
+
+    <div id="cartDisplay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
