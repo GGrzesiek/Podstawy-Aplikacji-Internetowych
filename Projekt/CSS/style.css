@@ -1,0 +1,189 @@
+body {
+  margin: 0; /* Usunięcie domyślnych marginesów body */
+}
+#main-nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed; /* Ustawienie pozycji na stałą (fixed) */
+  top: 0; /* Przyklejenie do górnej krawędzi ekranu */
+  left: 0;
+  width: 100%; /* Rozciągnięcie na całą szerokość */
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.logo-container h1 {
+  font-size: 2em;
+}
+
+.logo img {
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.3s ease;
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.nav-links a:hover {
+  color: #007BFF; /* Change color to blue on hover */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.submenu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  z-index: 1;
+}
+
+.submenu li a {
+  padding: 12px 16px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submenu li a:hover {
+  background-color: #f1f1f1;
+  color: #007BFF;
+}
+
+.dropdown:hover .submenu {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.submenu li:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+  }
+
+  .main-content, .gallery-container {
+    width: 100%; /* Ustaw na pełną szerokość w przypadku małego ekranu */
+    margin-right: 0; /* Usuń odstęp na prawo */
+    margin-bottom: 20px; /* Dodaj odstęp na dół między galerią a treścią */
+}
+}
+
+#main {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* wysokość sekcji zajmująca cały widok */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  /* Dodajmy te linie, aby upewnić się, że obraz ma związek z tłem */
+  position: relative;
+  z-index: 1;
+}
+
+  .main-content {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5); /* Półprzezroczyste czarne tło dla lepszej czytelności tekstu */
+    padding: 20px;
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
