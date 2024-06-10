@@ -1,43 +1,659 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+	<meta name="author" content="Grzegorz Kryszczuk">
     <title>Skauci Europy</title>
-    <link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" type="img/png" href="img/cross.png"> 
+
+
+    <!-- =============== Bootstrap Core CSS =============== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- =============== fonts awesome =============== -->
+    <link rel="stylesheet" href="css/font/css/font-awesome.min.css" type="text/css">
+    <!-- =============== Plugin CSS =============== -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- =============== Custom CSS =============== -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- =============== Owl Carousel =============== -->
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/isotope-docs.css" media="screen">
+	<link rel="stylesheet" href="css/baguetteBox.css">
+	
 </head>
+
 <body>
-    <nav id="main-nav">
+    <!-- =============== Preloader =============== -->
+    <div id="preloader">
+        <div id="loading">
+		<img width="256" height="32" src="img/loading-cylon-red.svg" alt="Ładowanie">	
+        </div>
+    </div>
+    <!-- =============== nav =============== -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="logo-container">
-                <a href="index.html" class="logo">
-                    <img src="https://i0.wp.com/uigse-fse.org/wp-content/uploads/2019/10/croix-agse.png?w=1080" alt="Logo Skautów Europy">
-                </a>
-                <h1>Skauci Europy</h1>
-            </div>
-            <ul class="nav-links">
-                <li class="dropdown">
-                    <a href="o-nas.html">O nas</a>
-                    <ul class="submenu">
-                        <li><a href="historia.html">Historia</a></li>
-                        <li><a href="wladze.html">Władze</a></li>
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Rozwiń</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-cross" href="#"><img src="img/cross.png" alt="Krzyż Harcerski">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="#about">O nas</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#Branches">Gałęzie</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#Gallery">Galeria</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#blog">Wpisy</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Kontakt</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="aktualnosci.html">Aktualności</a></li>
-                <li><a href="wydarzenia.html">Wydarzenia</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+                </div>
+                <!-- =============== navbar-collapse =============== -->
+
+            </div>
         </div>
+        <!-- =============== container-fluid =============== -->
     </nav>
-    <section style="background-image: url('Zdjecia/main1.jpg');" id="main">
-        <div class="main-content">
-            <h2>Przygoda czeka!</h2>
-            <p>Dołącz do Skautów Europy i odkryj świat pełen wyzwań, przyjaźni i niezapomnianych przeżyć.</p>
-            <a href="kontakt.html" class="btn">Dowiedz się więcej</a>
-        </div>
+    <!-- =============== header =============== -->
+	<header id="home" class="header">
+		<!-- =============== container =============== -->
+		<div class="container">
+			<div class="header-content row">
+				
+				<!-- Carousel for parents and kids version od header -->
+				<div id="owl-demo" class="owl-carousel header1">
+					<div>
+						<div class="col-xs-12 col-sm-6 col-md-6 header-text">
+							<!-- "wow fadeInDown animated" - Animated entrance -->
+							<!-- data-wow-delay=".40s" - Delayed entrance -->
+							<!-- col-xs-12 col-sm-6 col-md-6 - Bootstrap css class-->
+							<h2 class="wow bounceIn animated" data-wow-delay=".40s">DROGI <span>RODZICU</span> ZAPISZ <br/>SWOJE DZIECKO</h2>
+							<h3 class="wow bounceIn animated" data-wow-delay=".50s">NIEZAPOMNIANA PRZYGODA </h3>
+							<p class="wow bounceIn animated" data-wow-delay=".60s">Już dziś zapisz swoje dziecko do najprężniej rozwijającej się organizacji harcesrkiej w Polsce!</p>
+								<div class="btn btn-primary btn-lg btn-ornge wow bounceIn animated" data-wow-delay="1s">
+									<!-- class="page-scroll" - scrols after pushing button to contact section -->
+									<a class="page-scroll" href="#contact">Kontakt</a> 
+								</div>
+						</div>               
+					</div>
+					<div>
+						<div class="col-xs-12 col-sm-6 col-md-6 header-text">
+							<h2 class="wow bounceIn animated" data-wow-delay=".40s">DROGA <span>MŁODZIEŻY</span> WKROCZ <br/></h2>
+							<h3 class="wow bounceIn animated" data-wow-delay=".50s">W PRZYGODĘ ŻYCIA </h3>
+							<p class="wow bounceIn animated" data-wow-delay=".60s">Już dziś zapisz się do najprężniej rozwijającej się organizacji harcesrkiej w Polsce!</p>
+							<div class="btn btn-primary btn-lg btn-ornge wow bounceIn animated" data-wow-delay="1s"><a class="page-scroll" href="#contact">Kontakt</a>
+							</div>
+						</div>               
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =============== container end =============== -->
+	</header>
+    <!-- =============== About =============== -->
+    <section id="about" class="">
+		<!-- =============== container =============== -->
+        <div class="container">            
+           <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInDown animated" data-wow-delay=".5s">
+					<h2>Historia</h2>
+					<p>Metoda skautowa wzięła się z głęboko pedagogicznej intuicji angielskiego generała lorda Roberta Baden-Powella. W trakcie swej kariery wojskowej za granicą, B.P. zauważa, że jeśli młodych nastolatków obdarzy się odpowiedzialnością i jednocześnie zaufaniem, potrafią oni dokonywać cudów. </p>
+					<p>W 1899 roku publikuje książkę zatytułowaną “Pomoc dla zwiadowców”. Po powrocie do Londynu zaskakuje go fakt, że jego książka używana jest przez młodych ludzi, którzy nie mają nic wspólnego z armią i którzy stawiają mu mnóstwo pytań, wymagających długich odpowiedzi.</p>
+					<p>Pracując nieustannie nad tym tematem, zbiera na wyspie Brownsea w lipcu 1907 roku dwudziestu chłopców z różnych warstw społecznych i tworzy z nich siedmioosobowe ekipy, zwane zastępami, kierowane przez jednego z nich. Po tym obozie B.P. publikuje książkę “Skauting dla chłopców”. Podręcznik ten został błyskawicznie sprzedany w milionach egzemplarzy.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
+                    <img src="img/about-img.jpg" alt="Baden-Powell"/>               
+                </div>     
+            </div>
+        </div>   
+		<!-- =============== container end =============== -->		
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="JS/script.js"></script>
+	<section id="wladze" >
+		<!-- =============== container =============== -->
+		<div class="container">            
+			<div class="row">
+			<div class="title">
+				<h2>Władze Stowarzyszenia</h2>
+				<p>Żadna organizacja nie funkcjonowałaby bez zarządu. A nasz jest całkiem spoko!</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown animated" data-wow-delay=".1s">
+				<div class="timg"><img src="img/wladze-img1.jpg" alt="Piotr Bogusz"/></div>
+				<div class="t-box">
+				<h3>Piotr Bogusz</h3>
+				<span>Przewodniczący Stowarzyszenia </span>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp animated" data-wow-delay=".2s">
+				<div class="timg"><img src="img/wladze-img2.jpg" alt="Paweł Lochyński"/></div>
+				<div class="t-box">
+				<h3>Paweł Lochyński</h3>
+				<span>Naczelnik Harcerzy</span>
+				</div>				   			   
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown animated" data-wow-delay=".3s">
+				<div class="timg"><img src="img/wladze-img3.jpg" alt="Joanna Skowrońska"/></div>
+				<div class="t-box">
+				<h3>Joanna Skowrońska</h3>
+				<span>Naczelniczka Harcerek</span>
+				</div>
+			</div> 
+			<div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp animated" data-wow-delay=".4s">
+				<div class="timg"><img src="img/wladze-img4.jpg" alt="Natalia Sielecka"/></div>
+				<div class="t-box">
+				<h3>Natalia Sielecka</h3>
+				<span>Sekretarz Krajowy</span>
+				</div>
+			</div>                 
+			</div>
+		</div>   
+		<!-- =============== container end =============== -->		
+    </section>	
+	<!-- =============== Branches =============== -->
+    <section id="Branches" class="">
+		<!-- =============== container =============== -->
+        <div class="container">            
+            <div class="row">
+			 	<div class="col-xs-12 col-sm-12 col-md-6 wow fadeInLeft animated" data-wow-delay=".5s">
+                    <img src="img/Branches-img.jpg" class="img-left" alt="Gałęzie" />               
+            	</div>     
+                <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
+                   <h2>Gałęzie</h2>
+				   <p>Przygoda, przyjaźń, wyjątkowe i głębokie doświadczenia... To właśnie oferujemy każdemu chłopcu i dziewczynie, aby uczynić z nich bohaterów ich własnej podróży rozwoju osobistego.</p>
+				   <p>Nasza pedagogika zakłada brak koedukacji, co za tym idzie mamy jeden ruch i dwa nurty. Oba jednak działają bardzo dobrze i są podzielone na tzw. Gałęzie - podział jest na zasadzie wieku i indywidualnych potrzeb każdego z dzieci.</p> 
+				   <p>Odkryj wszystkie Gałęzie FSE i dołącz do nas w najbardziej niezwykłej podróży swojego życia!</p>
+                </div>
+            </div>
+        </div>   
+		<!-- =============== container end =============== -->		
+    </section>	
+	<!-- =============== for box =============== -->		
+	<section class="for-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownLeft animated" data-wow-delay=".1s">
+					<div class="clr1">				
+					<h2>
+						ŻÓŁTA
+					</h2>
+					</div>
+					<div class="wbox">
+						<strong>WILCZKI</strong>
+						<p>To najmłodsza gałąź obejmująca wiek 9-12. Jednostką przewodzi Akela a wszystko dzieje się w klimacie "Księgi Dżungli"</p>
+						<a href="blog-sejmik.html" class="clr1-a">+</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownLeft animated" data-wow-delay=".2s">
+					<div class="clr2">				
+					<h2>
+						ZIELONA
+					</h2>
+					</div>
+					<div class="wbox">
+						<strong>HARCERZE/HARCERKI</strong>
+						<p>To gałąź obejmująca wiek 13-17. Jest ona pierwowzorem od którego powstały wszystkie pozostałe gałęzie.</p>
+						<a href="blog-whm.html" class="clr2-a">+</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownRight animated" data-wow-delay=".3s">
+					<div class="clr3">				
+					<h2>
+						CZERWONA
+					</h2>	
+					</div>
+					<div class="wbox">
+						<strong>WĘDROWNICY/PRZEWODNICZKI</strong>
+						<p>To gałąź obejmująca wiek 17-18. Podczas roku formacji młodzi przygotowują się do objęcia jednostek</p>
+						<a href="blog-sejmik.html" class="clr3-a">+</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 wow rotateInDownRight animated" data-wow-delay=".4s">
+					<div class="clr4">				
+					<h2>
+						FIOLETOWA
+					</h2>
+					</div>
+					<div class="wbox">
+						<strong>SZEFOWIE</strong>
+						<p>To gałąź obejmująca wiek 18+. Osoby które się w niej znajdują prowadzą jednostki takie jak drużyny czy też gromady.</p>
+						<a href="blog-sejmik.html" class="clr4-a">+</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== Counter =============== -->
+    <section class="counter">
+		<!-- =============== container =============== -->
+        <div class="container">            
+            <div class="row">
+			<div class="title">
+				<h2>Jeśli jeszcze nie jesteś przekonany to spójrz na liczby!</h2>				
+			</div>
+			 	<div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".1s">
+					<!-- =============== fa fa-something - graphic symbols from fontsawesome  =============== -->
+                    <i class="fa fa-globe size"></i>
+					<h2>26</h2>
+					<span>Stowarzyszenia</span>
+                </div>     
+               	<div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".2s">
+                    <i class="fa fa-users size"></i>
+					<h2>71000</h2>
+					<span>Członków</span>
+                </div>  
+				<div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".3s">
+                        <i class="fa fa-user size"></i>
+						<h2>15000</h2>
+						<span>Wolontariuszy</span>
+                </div>  
+				<div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".4s">
+                        <i class="fa fa-book size"></i>
+						<h2>3200</h2>
+						<span>Uczestników Obozów Szkoleniowych</span>
+                </div>  
+				<div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".5s">
+                    <i class="fa fa-sort-up size"></i>
+					<h2>28%</h2>
+					<span>Przyrost w ciągu 3 lat</span>
+                </div>  
+				<div class="col-xs-12 col-sm-2 col-md-2 wow fadeInUp animated" data-wow-delay=".6s">
+                    <i class="fa fa-trophy size"></i>
+					<h2>500+</h2>
+					<span>Nagród w kategorii pedagogiki</span>
+                </div>  
+            </div>
+        </div>   
+		<!-- =============== container end =============== -->		
+    </section>
+<!-- =============== Gallery =============== -->
+    <section id="Gallery" class="wow flipInX animated" data-wow-delay=".5s">
+		<div class="title">
+			<h2>Galeria</h2>				
+		</div>
+	<!-- =============== data-js-module="filtering-demo" is used for filtering in specified category =============== -->
+	<div class="big-demo go-wide" data-js-module="filtering-demo">
+	<div class="container">            
+		<div class="row">
+			<div class="filter-button-group button-group js-radio-button-group">
+				<button class="button is-checked" data-filter="*">Wszystkie</button>
+				<button class="button" data-filter=".yellow">Wilczki</button>
+				<button class="button" data-filter=".green">Harcerze/Harcerki</button>  
+				<button class="button" data-filter=".red">Wędrownicy/Przewodniczki</button>  
+				<button class="button" data-filter=".purple">Szefowie/Szefowe</button>  
+			</div>
+		</div>
+	</div>
+
+
+	<div class="grid baguetteBoxThree gallery">
+		<div class="element-item transition yellow " data-category="post-transition">
+			<a href="img/gallery/emp-1.jpg">	 
+				<img src="img/gallery/emp-1.jpg" alt="Zdjecie Harcerzy 1"/>      
+				<div class="hover-img"> 
+					<h2>Wilczki</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>
+			</a>
+		</div>      
+		<div class="element-item post-transition green " data-category="post-transition">
+			<a href="img/gallery/emp-2.jpg">	 
+				<img src="img/gallery/emp-2.jpg" alt="Zdjecie Harcerzy 2"/>    
+				<div class="hover-img"> 
+					<h2>Harcerze</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>		
+			</a>
+		</div>
+		<div class="element-item post-transition yellow " data-category="post-transition">
+			<a href="img/gallery/emp-3.jpg">	 
+				<img src="img/gallery/emp-3.jpg" alt="Zdjecie Harcerzy 3"/>       
+				<div class="hover-img"> 
+					<h2>Wilczki</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>		
+			</a>
+		</div>
+		<div class="element-item transition green " data-category="post-transition">
+			<a href="img/gallery/emp-4.jpg">	 
+				<img src="img/gallery/emp-4.jpg" alt="Zdjecie Harcerzy 4"/>       
+				<div class="hover-img"> 
+					<h2>Harcerze</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>	
+			</a>		
+		</div>      
+		<div class="element-item post-transition purple " data-category="post-transition">
+			<a href="img/gallery/emp-5.jpg">	 
+				<img src="img/gallery/emp-5.jpg" alt="Zdjecie Harcerzy 5"/>       
+				<div class="hover-img"> 
+					<h2>Szefowe</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>	
+			</a>
+		</div>
+		<div class="element-item post-transition red " data-category="post-transition">
+			<a href="img/gallery/emp-6.jpg">	 
+				<img src="img/gallery/emp-6.jpg" alt="Zdjecie Harcerzy 6"/>       
+				<div class="hover-img"> 
+					<h2>Przewodniczki</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>	
+			</a>
+		</div>
+		<div class="element-item post-transition purple " data-category="post-transition">
+			<a href="img/gallery/emp-7.jpg">	 
+				<img src="img/gallery/emp-7.jpg" alt="Zdjecie Harcerzy 7"/>       
+				<div class="hover-img"> 
+					<h2>Szefowe</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>	
+			</a>
+		</div>
+		<div class="element-item transition red " data-category="post-transition">
+			<a href="img/gallery/emp-8.jpg">	 
+				<img src="img/gallery/emp-8.jpg" alt="Zdjecie Harcerzy 8"/>       
+				<div class="hover-img"> 
+					<h2>Wędrownicy</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>	
+			</a>
+		</div>      
+		<div class="element-item post-transition green " data-category="post-transition">
+			<a href="img/gallery/emp-9.jpg">	 
+				<img src="img/gallery/emp-9.jpg" alt="Zdjecie Harcerzy 9"/>       
+				<div class="hover-img"> 
+					<h2>Harcerki</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>	
+			</a>
+		</div>
+		<div class="element-item post-transition yellow " data-category="post-transition">
+			<a href="img/gallery/emp-10.jpg">	 
+				<img src="img/gallery/emp-10.jpg" alt="Zdjecie Harcerzy 10"/>       
+				<div class="hover-img"> 
+					<h2>Wilczki</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>	
+			</a>          
+		</div>
+		<div class="element-item post-transition purple " data-category="post-transition">
+			<a href="img/gallery/emp-11.jpg">	 
+				<img src="img/gallery/emp-11.jpg" alt="Zdjecie Harcerzy 11"/>       
+				<div class="hover-img"> 
+					<h2>Szefowie</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>	
+			</a>
+		</div>
+		<div class="element-item transition red " data-category="post-transition">
+			<a href="img/gallery/emp-12.jpg">	 
+				<img src="img/gallery/emp-12.jpg" alt="Zdjecie Harcerzy 12"/>       
+				<div class="hover-img"> 
+					<h2>Wędrownicy</h2>
+					<i class="fa fa-camera camera"></i>
+				</div>	
+			</a>
+		</div>      
+	</div>
+
+ 
+</div>
+</section>
+	<section id="blog" class="">
+		<!-- =============== container =============== -->
+        <div class="container">            
+            <div class="row">
+				<div class="title">
+					<h2>Wpisy</h2>
+					<p>Oto nasze ostatnie wielkie wydarzenia.</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s">
+					<div class="blog-img">
+					  	<img src="img/sejmik.jpg" alt="Sejmik"/>
+					</div>
+					<div class="row">
+						<div class="data">17-19</div>
+						<div class="month">Maj</div>
+					</div>
+					<div class="row">
+						<h3>Sejmik Stowarzyszenia</h3>
+						<p>Zakończyliśmy dziś 17 Sejmik Stowarzyszenia 2024. Rozpoczęła się kadencja 2024-2027 nowowybranej Rady i Zarządu. Dziękujemy Skautom Europy w Radomiu za wspaniałą gościnę!</p>
+						<a href="blog-sejmik.html">WIĘCEJ</a>
+					</div>
+				</div>      
+                <div class="col-xs-12 col-sm-4 col-md-4 wow fadeInUp animated" data-wow-delay=".4s">
+                    <div class="blog-img">
+						<img src="img/whm.jpg " alt="Wielkie Harce Majowe"/>
+					</div>
+					<div class="row">
+						<div class="data">1-5</div>
+						<div class="month">Maj</div>
+					</div>
+					<div class="row">
+						<h3>Wielkie Harce Majowe</h3>
+						<p>Niemal tysiąc harcerek i tyle samo harcerzy wzięło udział w pierwszych od sześciu lat Wielkich Harcach Majowych. Motywem przewodnim harców dziewcząt było Powstanie Warszawskie, natomiast chłopcy wybrali Powstanie Styczniowe.</p>
+						<a href="blog-sejmik.html">WIĘCEJ</a>
+					</div>
+                </div>         
+				<div class="col-xs-12 col-sm-4 col-md-4 wow fadeInDown animated" data-wow-delay=".3s">
+                    <div class="blog-img">
+						<img src="img/dm.jpg " alt="Dzień Modlitw"/>
+					</div>
+						<div class="row">
+							<div class="data">23</div>
+							<div class="month">Marzec</div>
+						</div>
+						<div class="row">
+							<h3>Dzień Modlitw</h3>
+							<p>Co roku w sobotę najbliżej święta Zwiastowania Pańskiego - Skauci Europy w całej Polsce zjeżdżają się na Dzień Modlitw za FSE do sanktuariów maryjnych, gdzie całe środowiska skautowych wspólnot łączą się w modlitwie za naszą organizację.</p>
+							<a href="blog-sejmik.html">WIĘCEJ</a>
+						</div>
+                </div>        
+            </div>
+        </div>   
+		<!-- =============== container end =============== -->		
+    </section>	
+	<section id="contact">
+	<!-- =============== container =============== -->
+		<div class="container">
+			    <div class="row">
+                <div class="title">
+				<h2>Kontakt</h2>
+				<p>Zostaw nam kontakt a szef najbliższej jednostki się do ciebie odewzwie!</p>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated" data-wow-delay=".1s">
+
+					<form action="#" method="post">
+						<div class="ajax-hidden">
+							<div class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+								<label for="c_name" class="sr-only">Imię i nazwisko</label>
+								<input type="text" placeholder="Imię i nazwisko" name="name" class="form-control" id="c_name" required="">
+							</div>
+
+							<div data-wow-delay=".1s" class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+								<label for="c_email" class="sr-only">Email</label>
+								<input type="email" placeholder="E-mail" name="email" class="form-control" id="c_email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="">
+							</div>
+							
+							<div data-wow-delay=".1s" class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+								<label for="c_phone" class="sr-only">Telefon</label>
+								<input type="tel" placeholder="Telefon" name="phone" class="form-control" id="c_phone" pattern="(?:\+48)? ?\d{3}[- ]?\d{3}[- ]?\d{3}" required="">
+							</div>
+
+							<div data-wow-delay=".1s" class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+								<label for="c_age" class="sr-only">Wiek</label>
+								<input type="number" placeholder="Wiek" name="age" class="form-control" id="c_age" min="1" max="120" required="">
+							</div>
+
+							<div data-wow-delay=".1s" class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+								<label for="c_city" class="sr-only">Miasto</label>
+								<input type="text" placeholder="Miasto" name="city" class="form-control" id="c_city" pattern="A-ZĄĘŁŃÓŚŹŻ][a-ząęłńóśźż]+(\s[A-ZĄĘŁŃÓŚŹŻ][a-ząęłńóśźż]+)*" required="">
+							</div>
+
+							<div data-wow-delay=".2s" class="col-xs-12 col-sm-6 col-md-6 form-group wow fadeInUp animated">
+								<textarea placeholder="Wiadomość (opcjonalna)" rows="7" name="description" id="description" class="form-control"></textarea>
+							</div>
+
+							<button data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="submit">Wyślij</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form>
+
+				</div>              
+			</div>
+		</div><!-- =============== container end =============== -->
+	</section>
+    <!-- Footer -->
+    <footer id="footer">
+	<!-- =============== container =============== -->
+    <div class="container">
+			    <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+				
+					<ul class="social-links">
+						<li><a class="wow fadeInUp animated" href="https://www.facebook.com/skauci.europy" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
+						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="https://www.instagram.com/skaucieuropy_pl/" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"><i class="fa fa-instagram"></i></a></li>
+						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="https://github.com/GGrzesiek" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-github"></i></a></li>
+					</ul>
+
+                    <p class="copyright">
+                        &copy; 2024 Stworzone przez <a href="https://github.com/GGrzesiek">Grzegorz Kryszczuk</a>
+					</p>
+
+				</div>
+				<div data-wow-delay=".6s" class="col-xs-12 col-sm-6 col-md-6 wow bounceIn  animated" style="visibility: visible; animation-delay: 0.6s; animation-name: bounceIn;">
+
+					  <section class="widget widget_text" id="text-15">
+                         <h3 class="widget-title">KONTAKT</h3> <div class="textwidget">SHK "ZAWISZA" FSE<br>
+                        <p>03-664 Warszawa<br>
+						ul. Gibraltarska nr 4<br>
+                        +48 22 822 32 29</p>
+                        <a href="mailto:biuro@skauci-europy.pl">biuro@skauci-europy.pl</a> →</div>
+                    </section>
+
+				</div>
+			</div>
+    </div><!-- =============== container end =============== -->
+	</footer>    
+	<!-- =============== jQuery =============== -->
+    <script src="js/jquery.js"></script>
+	 <script src="js/isotope-docs.min.js"></script>
+    <!-- =============== Bootstrap Core JavaScript =============== -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- =============== Plugin JavaScript =============== -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script> 
+	<!-- =============== owl carousel =============== -->
+    <script src="owl-carousel/owl.carousel.js"></script>  
+	<!-- Isotope does NOT require jQuery. But it does make things easier -->
+
+<script src="js/baguetteBox.js" async></script>
+<script src="js/plugins.js" async></script>
+ 
+    <!-- =============== Custom Theme JavaScript =============== -->
+    <script src="js/creative.js">	</script> 
+<script src="js/jquery.nicescroll.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+	/*
+	It is using the jQuery library to perform some actions when the document is ready.
+	The code starts by initializing a variable nice using the niceScroll() function from the jQuery library.
+	This function is used to add a custom scrollbar to the HTML element (<html>) representing the entire document page.
+	The niceScroll() function returns an object with various properties and methods related to the scrollbar.
+	In this case, the object is assigned to the variable nice.
+
+	Next, the code appends the version of the niceScroll library to the content of an HTML element with the id div1.
+	It does this by retrieving the current content of div1 using the html() function and concatenating it with the version property of the nice object.
+	The updated content is then set back to div1 using the html() function.
+
+	After that, the code initializes custom scrollbars for three different scrollable elements (<div>s) using the niceScroll() function.
+	Each initialization is done by passing different options as an object to the niceScroll() function.
+	For the first scrollable <div> with the id boxscroll, the code sets the cursorcolor option to #00F (blue) and enables the boxzoom feature.
+	For the second scrollable <div> with the id boxscroll2, the code sets the cursorcolor option to #F00 (red), the cursoropacitymax option to 0.7, and enables both the boxzoom and touchbehavior features. 
+	Additionally, it specifies the element with the id contentscroll2 as the content to be scrolled within boxscroll2.
+	For the third scrollable element, which is an <iframe> with the id boxframe, the code sets the cursorcolor option to #0F0 (green), the cursoropacitymax option to 0.7, and enables both the boxzoom and touchbehavior features. It specifies the element with the id boxscroll3 as the content to be scrolled within boxframe.
+
+	Finally, for the fourth scrollable <div> with the id boxscroll4, the code sets the boxzoom option to true and specifies the element with the class wrapper as the content to be scrolled within boxscroll4. This option enables hardware acceleration when scrolling is performed within the wrapper element.
+	Overall, this code snippet demonstrates the usage of the niceScroll library to add custom scrollbars to different elements on a web page, providing various customization options for each scrollbar.*/
+	var nice = $("html").niceScroll();  // The document page (body)
+	
+	$("#div1").html($("#div1").html()+' '+nice.version);
+    
+    $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#00F",boxzoom:true}); // First scrollable DIV
+
+    $("#boxscroll2").niceScroll("#contentscroll2",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // Second scrollable DIV
+    $("#boxframe").niceScroll("#boxscroll3",{cursorcolor:"#0F0",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
+	
+    $("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
+    
+  });
+</script>
+<script>
+window.onload = function() {
+
+	/*
+	The code is wrapped inside a window.onload event handler, which means that it will be executed when the entire webpage, including its resources like images and stylesheets, has finished loading.
+	The first part of the code checks if the variable oldIE is undefined and if the Object.keys method is available. 
+	If both conditions are true, it calls the initHighlighting method of the hljs object.
+	This code is likely used to initialize syntax highlighting using the highlight.js library, but only if the browser is not an older version of Internet Explorer and the Object.keys method is supported.
+	The next few lines of code call the run method of the baguetteBox object multiple times. 
+	baguetteBox is likely a JavaScript library used for creating image galleries or lightboxes.
+	Each call to baguetteBox.run specifies a different CSS selector as its argument, indicating the elements on the webpage that should be turned into image galleries using the baguetteBox library.
+
+	The first call to baguetteBox.run uses the CSS class selector .baguetteBoxOne, indicating that all elements with the class baguetteBoxOne should be turned into image galleries.
+	The second call to baguetteBox.run uses the CSS class selector .baguetteBoxTwo, indicating that all elements with the class baguetteBoxTwo should be turned into image galleries.
+	The third call to baguetteBox.run uses the CSS class selector .baguetteBoxThree and also provides an additional configuration option animation with the value 'fadeIn'. This indicates that all elements with the class baguetteBoxThree should be turned into image galleries, and the images should fade in when displayed.
+	The fourth call to baguetteBox.run uses the CSS class selector .baguetteBoxFour and provides a configuration option buttons with the value false. This indicates that all elements with the class baguetteBoxFour should be turned into image galleries, but the gallery should not display any buttons.
+	The fifth call to baguetteBox.run uses the CSS class selector .baguetteBoxFive and provides a configuration option captions as a function. This function is used to dynamically generate captions for the images in the gallery. It takes an element parameter, which represents each image element in the gallery, and returns the value of the alt attribute of the first <img> element within that element.
+
+	Overall, this code snippet initializes syntax highlighting using highlight.js if certain conditions are met, and then sets up multiple image galleries using the baguetteBox library with different configurations and selectors. */
+    if(typeof oldIE === 'undefined' && Object.keys)
+        hljs.initHighlighting();
+
+    baguetteBox.run('.baguetteBoxOne');
+    baguetteBox.run('.baguetteBoxTwo');
+    baguetteBox.run('.baguetteBoxThree', {
+        animation: 'fadeIn'
+    });
+    baguetteBox.run('.baguetteBoxFour', {
+        buttons: false
+    });
+    baguetteBox.run('.baguetteBoxFive', {
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+        }
+    });
+};
+</script>
 </body>
 </html>
+
